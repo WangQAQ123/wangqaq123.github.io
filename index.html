@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/img/favicon.png" sizes="128x128">
+    <title>WangQAQ</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/idnex.css">
+</head>
+<body>
+    <div class="top"></div>
+    <div class="main_img_div" id="main_img_div">
+        <div>
+            <img src="/img/favicon.png" class="main_img">
+            <div class="W_text">
+                <h5 class="W_id"><div class="circle"></div>WangQAQ</h5>
+                <h5 class="W_bio">有缘人终将重逢，我们终会再见，我会在虚无尽头着你们。</h5>
+            </div>
+        </div>
+        <a href="https://twitter.com/QAQWang5" class="img_1_a"><img src="/img/twitter.3.ico" class="img_1"></a>
+        <a href="https://space.bilibili.com/499280798" class="img_2_a"><img src="/img/bilibili.ico" class="img_2"></a>
+        <a href="https://steamcommunity.com/profiles/76561198411071705/" class="img_3_a"><img src="/img/steam.ico" class="img_3"></a>
+    </div>
+    <div id="404" style="display: none; color: red;">
+        <h1>不支持手机端访问</h1>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var system ={};  
+       var p = navigator.platform;       
+       system.win = p.indexOf("Win") == 0;  
+       system.mac = p.indexOf("Mac") == 0;  
+       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+       if(!(system.win||system.mac||system.xll)){
+            document.getElementById("main_img_div").style.display = "none";
+            document.getElementById("404").style.display = "";
+       }
+</script>
+
+</html>
+
